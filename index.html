@@ -18,7 +18,7 @@
     <!-- header section start  -->
     <header>
         <!-- navbar start  -->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand fs-4 " href="#">Pro Edu</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -32,22 +32,60 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Courses</a>
+                            <a class="nav-link" href="#courses">Courses</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Deals</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Succses</a>
+                            <a class="nav-link" href="#success">Succses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Register</a>
+                            <a class="nav-link" href="#register">Register</a>
                         </li>
                     </ul>
-                    <button class="btn btn-outline-info ms-auto" type="submit">Register</button>
+                    <button type="button" class="btn btn-info text-white" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" data-bs-whatever="@mdo">Register</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="text-dark">Singup form</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="First name"
+                                                aria-label="First name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" placeholder="Last name"
+                                                aria-label="Last name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" id="inputEmail4"
+                                                placeholder="Enter Your Email Adress">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="password" class="form-control" id="inputPassword4"
+                                                placeholder="Create Password">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Sing Up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -124,7 +162,7 @@
         <!-- slider section end -->
 
         <!-- courses section start -->
-        <section>
+        <section id="courses">
             <!-- course catagories start  -->
             <section class="container my-5" id="courses">
                 <div class="text-center my-5">
@@ -236,7 +274,7 @@
         <!-- courses section end -->
 
         <!-- about section start  -->
-        <section class="container my-5">
+        <section class="container my-5" id="about">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-6">
                     <img class="img-fluid " src="images/working.png" alt="">
@@ -270,7 +308,7 @@
         <!-- about section end  -->
 
         <!-- join form section start  -->
-        <section class="container bg-info rounded p-5">
+        <section class="container bg-info rounded p-5" id="register">
             <div class="row text-white align-items-lg-center">
                 <div class="col-12 col-sm-12 col-lg-6">
                     <h2 class="display-4">Ready to join?</h2>
@@ -280,8 +318,6 @@
                 <div class="col-12 col-sm-12 col-lg-6 text-lg-end ">
                     <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
                         data-bs-target="#exampleModal" data-bs-whatever="@mdo">Register now</button>
-
-
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
